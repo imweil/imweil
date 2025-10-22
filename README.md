@@ -1,4 +1,5 @@
-## Hi there 👋
+<!--## Hi there 👋-->
+![Hi there!](https://capsule-render.vercel.app/api?type=waving&height=251&color=gradient&text=Hi%20there!&section=header&fontAlign=50&fontAlignY=35&desc=I%20am%20a%20CS%20student%20from%20China&reversal=false&textBg=false&descAlignY=55&descSize=25&fontSize=80)
 
 <!--
 **imweil/imweil** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -26,6 +27,18 @@ Here are some ideas to get you started:
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imweil/imweil/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/imweil/imweil/output/github-contribution-grid-snake.svg">
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/imweil/imweil/output/github-contribution-grid-snake.svg">
+  </picture>
+
+  <picture>
+    <source 
+      media="(prefers-color-scheme: dark)" 
+      srcset="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=293036&color=ffffff&line=9ecbff&point=f97583&area=true&hide_border=true" />
+    <source 
+      media="(prefers-color-scheme: light)" 
+      srcset="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true" />
+    <img 
+      alt="imweil's Activity Graph" 
+      src="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true" />
   </picture>
 
 <p align="center">
@@ -57,17 +70,3 @@ Here are some ideas to get you started:
   </picture>
   
 </p>
-
-  <picture>
-  <source 
-    media="(prefers-color-scheme: dark)" 
-    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=imweil&theme=dark&show_icons=true&hide_border=false&layout=compact" />
-  <source 
-    media="(prefers-color-scheme: light)" 
-    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=imweil&theme=default&show_icons=true&hide_border=false&layout=compact" />
-  <img 
-    alt="imweil's Top Languages" 
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=imweil&theme=default&show_icons=true&hide_border=false&layout=compact" 
-    height="150" />
-</picture>
-
