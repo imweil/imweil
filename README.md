@@ -56,6 +56,8 @@ Here are some ideas to get you started:
       height="150" />
   </picture>
   
+</p>
+
   <picture>
   <source 
     media="(prefers-color-scheme: dark)" 
@@ -68,6 +70,4 @@ Here are some ideas to get you started:
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=imweil&theme=default&show_icons=true&hide_border=false&layout=compact" 
     height="150" />
 </picture>
-</p>
-
 
