@@ -1,5 +1,4 @@
-<!--## Hi there 👋-->
-![Hi there!](https://capsule-render.vercel.app/api?type=waving&height=251&color=gradient&text=Hi%20there!&section=header&fontAlign=50&fontAlignY=35&desc=I%20am%20a%20CS%20student%20from%20China&reversal=false&textBg=false&descAlignY=55&descSize=25&fontSize=80)
+## Hi there 👋
 
 <!--
 **imweil/imweil** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -22,7 +21,6 @@ Here are some ideas to get you started:
 
 - ⚡ Fun fact: ...
   -->
-
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imweil/imweil/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/imweil/imweil/output/github-contribution-grid-snake.svg">
