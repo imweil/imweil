@@ -34,7 +34,7 @@ Here are some ideas to get you started:
       src="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true" />
   </picture>
 
-<p align="center">
+<!-- <p align="center">
   <picture>
     <source 
       media="(prefers-color-scheme: dark)" 
@@ -62,7 +62,7 @@ Here are some ideas to get you started:
       height="150" />
   </picture>
   
-</p>
+</p> -->
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imweil/imweil/output/github-contribution-grid-snake-dark.svg">
