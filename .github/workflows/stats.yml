@@ -19,29 +19,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Generate default theme stats
-      - name: generate github-readme-stats (default)
-        uses: anuraghazra/github-readme-stats@master
-        with:
-          username: ${{ github.repository_owner }}
-          theme: default
-          show_icons: true
-          hide_border: false
-          count_private: true
-          cache_seconds: 86400
-          output: dist/github-stats-default.svg
+      - name: generate github-readme-stats svgs (default + dark)
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          USERNAME="${{ github.repository_owner }}"
 
-      # Generate dark theme stats
-      - name: generate github-readme-stats (dark)
-        uses: anuraghazra/github-readme-stats@master
-        with:
-          username: ${{ github.repository_owner }}
-          theme: dark
-          show_icons: true
-          hide_border: false
-          count_private: true
-          cache_seconds: 86400
-          output: dist/github-stats-dark.svg
+          # default theme
+          curl -fsSL \
+            "https://github-readme-stats.vercel.app/api?username=${USERNAME}&theme=default&show_icons=true&hide_border=false&count_private=true" \
+            -o dist/github-stats-default.svg
+
+          # dark theme
+          curl -fsSL \
+            "https://github-readme-stats.vercel.app/api?username=${USERNAME}&theme=dark&show_icons=true&hide_border=false&count_private=true" \
+            -o dist/github-stats-dark.svg
 
       # Push generated SVGs to output branch
       - name: push stats svgs to output branch
