@@ -52,16 +52,16 @@ Here are some ideas to get you started:
   <picture>
     <source 
       media="(prefers-color-scheme: dark)" 
-      srcset="https://github-readme-streak-stats.herokuapp.com/?user=imweil&theme=dark&hide_border=false" />
+      srcset="https://https://streak-stats.demolab.com?user=imweil&theme=dark&hide_border=false" />
     <source 
       media="(prefers-color-scheme: light)" 
-      srcset="https://github-readme-streak-stats.herokuapp.com/?user=imweil&theme=default&hide_border=false" />
+      srcset="https://streak-stats.demolab.com?user=imweil&theme=default&hide_border=false" />
     <img 
       alt="imweil's Streak Stats" 
-      src="https://github-readme-streak-stats.herokuapp.com/?user=imweil&theme=default&hide_border=false" 
+      src="https://streak-stats.demolab.com?user=imweil&theme=default&hide_border=false" 
       height="150" />
   </picture>
-  
+
 </p>
 
   <picture>
