@@ -1,9 +1,8 @@
 name: generate animation
 
 on:
-  # run automatically every 24 hours
   schedule:
-    - cron: "0 */24 * * *" 
+    - cron: "0 0 * * *"   # run once per day (UTC)
   
   # allows to manually run the job at any time
   workflow_dispatch:
@@ -11,7 +10,7 @@ on:
   # run on every push on the master branch
   push:
     branches:
-    - main
+      - main
     
   
 
@@ -40,6 +39,8 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
+          destination_dir: snake
+          keep_files: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
