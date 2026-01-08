@@ -38,13 +38,13 @@ Here are some ideas to get you started:
   <picture>
     <source 
       media="(prefers-color-scheme: dark)" 
-      srcset="https://github-readme-stats.vercel.app/api?username=imweil&theme=dark&show_icons=true&hide_border=false&count_private=true" />
+      srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=imweil&theme=dark&show_icons=true&hide_border=false&count_private=true" />
     <source 
       media="(prefers-color-scheme: light)" 
-      srcset="https://github-readme-stats.vercel.app/api?username=imweil&theme=default&show_icons=true&hide_border=false&count_private=true" />
+      srcset="https://github-readme-stats-eight-theta.vercel.app/api?username=imweil&theme=default&show_icons=true&hide_border=false&count_private=true" />
     <img 
       alt="imweil's GitHub Stats" 
-      src="https://github-readme-stats.vercel.app/api?username=imweil&theme=default&show_icons=true&hide_border=false&count_private=true" 
+      src="https://github-readme-stats-eight-theta.vercel.app/api?username=imweil&theme=default&show_icons=true&hide_border=false&count_private=true" 
       height="150" />
   </picture>
 
