@@ -1,0 +1,47 @@
+name: generate github readme stats
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # run once per day (UTC)
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+      
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: generate github-readme-stats svgs (default + dark)
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          USERNAME="${{ github.repository_owner }}"
+
+          # default theme
+          curl -fsSL \
+            "https://github-readme-stats.vercel.app/api?username=${USERNAME}&theme=default&show_icons=true&hide_border=false&count_private=true" \
+            -o dist/github-stats-default.svg
+
+          # dark theme
+          curl -fsSL \
+            "https://github-readme-stats.vercel.app/api?username=${USERNAME}&theme=dark&show_icons=true&hide_border=false&count_private=true" \
+            -o dist/github-stats-dark.svg
+
+      # Push generated SVGs to output branch
+      - name: push stats svgs to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          destination_dir: stats
+          keep_files: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
