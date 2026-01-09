@@ -1,8 +1,8 @@
 name: generate animation
 
 on:
-  schedule:
-    - cron: "0 0 * * *"   # run once per day (UTC)
+  # schedule:
+  #   - cron: "0 0 * * *"   # run once per day (UTC)
   
   # allows to manually run the job at any time
   workflow_dispatch:
