@@ -1,5 +1,6 @@
+<!--
 ## Hi there 👋
-
+-->
 <!--
 **imweil/imweil** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
@@ -22,6 +23,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
   -->
 
+  ![imweil_metrics](github-metrics.svg)
+  
   <picture>
     <source 
       media="(prefers-color-scheme: dark)" 
@@ -52,7 +55,7 @@ Here are some ideas to get you started:
   <picture>
     <source 
       media="(prefers-color-scheme: dark)" 
-      srcset="https://https://streak-stats.demolab.com?user=imweil&theme=dark&hide_border=false" />
+      srcset="https://streak-stats.demolab.com?user=imweil&theme=dark&hide_border=false" />
     <source 
       media="(prefers-color-scheme: light)" 
       srcset="https://streak-stats.demolab.com?user=imweil&theme=default&hide_border=false" />
@@ -61,6 +64,7 @@ Here are some ideas to get you started:
       src="https://streak-stats.demolab.com?user=imweil&theme=default&hide_border=false" 
       height="150" />
   </picture>
+
 
 </p>
 
