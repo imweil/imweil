@@ -2,49 +2,61 @@ name: generate animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   
-  
-  # allows to manually run the job at any time
+    - cron: "0 */12 * * *"
   workflow_dispatch:
-  
-  # run on every push on the master branch
-  push:
-    branches:
-      - main
-    
-  
+  # push:
+  #   branches:
+  #     - main
+
+concurrency:
+  group: output-branch
+  cancel-in-progress: false
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    
+    permissions:
+      contents: write
+      actions: write
+
     steps:
-      # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      # 1) 生成 snake SVG（放到 dist/snake/ 目录）
       - name: generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/snack/github-contribution-grid-snake.svg
-            dist/snack/github-contribution-grid-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-          
-      # push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
-      - name: push github-contribution-grid-snake.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
+            dist/snake/github-contribution-grid-snake.svg
+            dist/snake/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # ✔️ 只有成功才删除 run
+      # 2) Checkout output 分支（不会覆盖整个分支，只是更新指定目录）
+      - name: Checkout output branch
+        uses: actions/checkout@v4
+        with:
+          ref: output
+
+      # 3) 只更新 output 分支里的 snake/ 目录，保留 metrics/ 等其他目录
+      - name: Copy snake assets into output branch
+        run: |
+          mkdir -p snake
+          cp -f dist/snake/github-contribution-grid-snake.svg snake/
+          cp -f dist/snake/github-contribution-grid-snake-dark.svg snake/
+
+      # 4) 提交并推送到 output 分支
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add snake/*.svg
+          git diff --cached --quiet || git commit -m "chore: update snake"
+          git push
+
+      # 5) 成功后删除本次 workflow run（可选；调试期建议先注释）
       - name: Delete this workflow run if success
-        if: success()   # 仅在整个 job 成功时执行
+        if: success()
         run: |
           curl -X DELETE \
             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
