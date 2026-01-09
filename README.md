@@ -24,7 +24,7 @@ Here are some ideas to get you started:
   -->
 
   <!-- ![imweil_metrics](github-metrics.svg) -->
-  ![imweil_metrics](https://raw.githubusercontent.com/imweil/imweil/refs/heads/output/metrics/metrics.svg)
+  ![imweil_metrics](https://raw.githubusercontent.com/imweil/imweil/refs/heads/metrics/metrics.svg)
   
   <picture>
     <source 
