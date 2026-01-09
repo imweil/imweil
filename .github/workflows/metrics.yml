@@ -25,9 +25,11 @@ jobs:
           #  - read:packages (for some packages related data)
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: output
+          committer_message: "chore: update metrics"
           filename: metrics/metrics.svg
           output_action: commit
-          output_branch: output
 
           # Options
           user: imweil
