@@ -26,9 +26,9 @@ jobs:
           #  - repo          (optional, if you want to include private repositories)
           token: ${{ secrets.METRICS_TOKEN }}
           committer_token: ${{ secrets.GITHUB_TOKEN }}
-          committer_branch: output
+          committer_branch: metrics
           committer_message: "chore: update metrics"
-          filename: metrics/metrics.svg
+          filename: metrics.svg
           output_action: commit
 
           # Options
