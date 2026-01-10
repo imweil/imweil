@@ -42,13 +42,13 @@ Here are some ideas to get you started:
   <picture>
     <source 
       media="(prefers-color-scheme: dark)" 
-      srcset="https://github-readme-stats-eta-topaz.vercel.app/api?username=imweil&theme=dark&show_icons=true&hide_border=false&count_private=true" />
+      srcset="https://github-readme-stats-eta-topaz.vercel.app/api?username=imweil&theme=dark&show_icons=true&hide_border=false&count_private=true&rank_icon=percentile" />
     <source 
       media="(prefers-color-scheme: light)" 
-      srcset="https://github-readme-stats-eta-topaz.vercel.app/api?username=imweil&theme=default&show_icons=true&hide_border=false&count_private=true" />
+      srcset="https://github-readme-stats-eta-topaz.vercel.app/api?username=imweil&theme=default&show_icons=true&hide_border=false&count_private=true&rank_icon=percentile" />
     <img 
       alt="imweil's GitHub Stats" 
-      src="https://github-readme-stats-eta-topaz.vercel.app/api?username=imweil&theme=default&show_icons=true&hide_border=false&count_private=true" 
+      src="https://github-readme-stats-eta-topaz.vercel.app/api?username=imweil&theme=default&show_icons=true&hide_border=false&count_private=true&rank_icon=percentile" 
       height="150" />
   </picture>
 
