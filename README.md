@@ -25,20 +25,8 @@ Here are some ideas to get you started:
 
   <!-- ![imweil_metrics](github-metrics.svg) -->
   ![imweil_metrics](https://raw.githubusercontent.com/imweil/imweil/refs/heads/metrics/metrics.svg)
-  
-  <picture>
-    <source 
-      media="(prefers-color-scheme: dark)" 
-      srcset="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=293036&color=ffffff&line=9ecbff&point=f97583&area=true&hide_border=true" />
-    <source 
-      media="(prefers-color-scheme: light)" 
-      srcset="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true" />
-    <img 
-      alt="imweil's Activity Graph" 
-      src="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true" />
-  </picture>
 
-<p align="center">
+  <p align="center">
   <picture>
     <source 
       media="(prefers-color-scheme: dark)" 
@@ -56,18 +44,30 @@ Here are some ideas to get you started:
   <picture>
     <source 
       media="(prefers-color-scheme: dark)" 
-      srcset="https://streak-stats.demolab.com?user=imweil&theme=dark&hide_border=false" />
+      srcset="https://github-readme-streak-stats-nine-plum.vercel.app?user=imweil&theme=dark&hide_border=false" />
     <source 
       media="(prefers-color-scheme: light)" 
-      srcset="https://streak-stats.demolab.com?user=imweil&theme=default&hide_border=false" />
+      srcset="https://github-readme-streak-stats-nine-plum.vercel.app?user=imweil&theme=default&hide_border=false" />
     <img 
       alt="imweil's Streak Stats" 
-      src="https://streak-stats.demolab.com?user=imweil&theme=default&hide_border=false" 
+      src="https://github-readme-streak-stats-nine-plum.vercel.app?user=imweil&theme=default&hide_border=false" 
       height="150" />
   </picture>
 
 
 </p>
+  
+  <picture>
+    <source 
+      media="(prefers-color-scheme: dark)" 
+      srcset="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=293036&color=ffffff&line=9ecbff&point=f97583&area=true&hide_border=true" />
+    <source 
+      media="(prefers-color-scheme: light)" 
+      srcset="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true" />
+    <img 
+      alt="imweil's Activity Graph" 
+      src="https://github-readme-activity-graph.vercel.app/graph?username=imweil&bg_color=ffffff&color=000000&line=9be9a8&point=40c463&area=true&hide_border=true" />
+  </picture>
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imweil/imweil/snake/github-contribution-grid-snake-dark.svg">
